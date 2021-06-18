@@ -1,5 +1,6 @@
 package com.org.school_rest.models;
 
+import com.org.school_rest.dto.StudentDto;
 import com.org.school_rest.models.BedAssignment;
 
 import javax.persistence.*;
@@ -60,6 +61,14 @@ public class Student {
         this.lastName = lastName;
         this.gender = gender;
     }
+
+
+    public Student(StudentDto dto){
+        this.firstName = dto.getFirstName();
+        this.lastName = dto.getLastName();
+        this.gender = dto.getGender();
+    }
+
     public Long getId() {
         return id;
     }

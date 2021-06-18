@@ -5,7 +5,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
-import com.org.school_rest.enumerations.ERoleName;
+//import com.org.school_rest.enumerations.ERoleName;
+import com.org.school_rest.enumerations.*;
 
 @SuppressWarnings("unused")
 public class SignUpRequest {
